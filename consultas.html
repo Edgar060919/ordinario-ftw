@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Reportes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Consulta de Reportes</h1>
+        <p>Revisa el estado de los reportes registrados</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reportar.html">Reportar</a>
+        <a href="consultas.html">Consultas</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="estadisticas.html">Estadísticas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <h2>Reportes recientes</h2>
+
+        <p>
+            En esta sección se muestran ejemplos de reportes registrados por ciudadanos.
+            Cada reporte cuenta con un folio, colonia, tipo de falla y estado de atención.
+        </p>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Folio</th>
+                    <th>Colonia</th>
+                    <th>Calle o referencia</th>
+                    <th>Tipo de falla</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Centro</td>
+                    <td>Calle Hidalgo</td>
+                    <td>Luminaria apagada</td>
+                    <td>Pendiente</td>
+                </tr>
+
+                <tr>
+                    <td>002</td>
+                    <td>Las Flores</td>
+                    <td>Avenida Principal</td>
+                    <td>Poste dañado</td>
+                    <td>En proceso</td>
+                </tr>
+
+                <tr>
+                    <td>003</td>
+                    <td>San Miguel</td>
+                    <td>Calle Morelos</td>
+                    <td>Luz intermitente</td>
+                    <td>Atendido</td>
+                </tr>
+
+                <tr>
+                    <td>004</td>
+                    <td>Los Pinos</td>
+                    <td>Frente al parque</td>
+                    <td>Cable expuesto</td>
+                    <td>Pendiente</td>
+                </tr>
+
+                <tr>
+                    <td>005</td>
+                    <td>La Esperanza</td>
+                    <td>Entrada principal</td>
+                    <td>Zona sin iluminación</td>
+                    <td>En proceso</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section>
+            <h2>Estados del reporte</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Pendiente</h3>
+                    <p>
+                        El reporte fue recibido, pero todavía no ha sido revisado
+                        por el área encargada.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>En proceso</h3>
+                    <p>
+                        El personal técnico ya revisa el caso o se encuentra
+                        programando la reparación.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Atendido</h3>
+                    <p>
+                        La falla fue revisada y el problema fue solucionado
+                        correctamente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto final - ordinario-ftw</p>
+    </footer>
+
+</body>
+</html>
