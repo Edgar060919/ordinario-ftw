@@ -3,90 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Reporte de Alumbrado Público</title>
+    <title>Sistema de Alumbrado Público</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <header>
-        <h1>Sistema de Reporte de Alumbrado Público</h1>
-        <p>Plataforma ciudadana para reportar fallas en luminarias</p>
-    </header>
+<header class="encabezado">
+    <div class="marca">
+        <div class="logo">AP</div>
+        <div>
+            <h1>Sistema de Reporte de Alumbrado Público</h1>
+            <p>Plataforma ciudadana para reportar fallas en luminarias públicas</p>
+        </div>
+    </div>
+</header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="reportar.html">Reportar</a>
-        <a href="consultas.html">Consultas</a>
-        <a href="mapa.html">Mapa</a>
-        <a href="estadisticas.html">Estadísticas</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+<nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="reportar.html">Registrar reporte</a>
+    <a href="consultas.html">Consultar folio</a>
+    <a href="admin.html">Panel administrativo</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
 
-    <main class="contenedor">
+<main class="contenedor">
 
-        <section class="hero">
-            <h2>Bienvenido al sistema</h2>
+    <section class="hero">
+        <div>
+            <span class="etiqueta">Servicio ciudadano</span>
+            <h2>Reporta fallas de alumbrado público de forma rápida y organizada</h2>
             <p>
-                Este sitio web permite a los ciudadanos reportar fallas en el alumbrado público
-                de su colonia o comunidad. El objetivo principal es facilitar la comunicación
-                entre la ciudadanía y el área encargada del mantenimiento urbano.
+                Este sistema permite registrar reportes de luminarias apagadas, postes dañados,
+                cables expuestos o zonas sin iluminación. Cada reporte podrá ser consultado
+                mediante un folio de seguimiento.
             </p>
-            <a class="boton" href="reportar.html">Hacer un reporte</a>
-        </section>
+            <a href="reportar.html" class="boton">Registrar reporte</a>
+        </div>
 
-        <section>
-            <h2>Objetivo del proyecto</h2>
+        <div class="panel-info">
+            <h3>Funciones principales</h3>
+            <p>Registro de reportes ciudadanos</p>
+            <p>Consulta de estado por folio</p>
+            <p>Panel administrativo</p>
+            <p>Estadísticas del servicio</p>
+        </div>
+    </section>
+
+    <section class="tarjetas">
+        <article class="tarjeta">
+            <h3>Registro ciudadano</h3>
             <p>
-                El objetivo de este proyecto es diseñar una plataforma web sencilla y funcional
-                que permita registrar, consultar y dar seguimiento a reportes relacionados con
-                fallas en luminarias públicas.
+                El ciudadano puede registrar una falla indicando ubicación, tipo de problema
+                y descripción.
             </p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Seguimiento</h3>
             <p>
-                Mediante este sistema, los ciudadanos pueden informar sobre calles con poca
-                iluminación, lámparas dañadas, postes en mal estado o fallas eléctricas visibles.
+                El sistema genera un folio que permite consultar posteriormente el estado del reporte.
             </p>
-        </section>
+        </article>
 
-        <section>
-            <h2>Problema que atiende</h2>
+        <article class="tarjeta">
+            <h3>Administración</h3>
             <p>
-                En muchas colonias existen luminarias apagadas o dañadas que pueden afectar la
-                seguridad de las personas, dificultar el tránsito nocturno y generar una mala
-                imagen urbana. Este sitio busca apoyar el registro organizado de dichas fallas.
+                El personal autorizado podrá revisar los reportes y actualizar su estado de atención.
             </p>
-        </section>
+        </article>
+    </section>
 
-        <section class="grid">
-            <div class="card">
-                <h3>Reportes rápidos</h3>
-                <p>
-                    El ciudadano puede registrar una falla indicando su ubicación,
-                    tipo de problema y una breve descripción.
-                </p>
-            </div>
+</main>
 
-            <div class="card">
-                <h3>Consulta de reportes</h3>
-                <p>
-                    El sistema permite consultar ejemplos de reportes y revisar su estado:
-                    pendiente, en proceso o atendido.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Mejor organización</h3>
-                <p>
-                    La información registrada ayuda a identificar zonas con mayor número
-                    de fallas y facilita la toma de decisiones.
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Proyecto final - ordinario-ftw</p>
-    </footer>
+<footer>
+    <p>Proyecto final - ordinario-ftw</p>
+</footer>
 
 </body>
 </html>

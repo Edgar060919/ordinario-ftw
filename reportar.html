@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportar Falla</title>
+    <title>Registrar Reporte</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <header>
-        <h1>Reportar Falla de Alumbrado</h1>
-        <p>Registra una luminaria dañada, apagada o con problemas</p>
-    </header>
+<header class="encabezado">
+    <div class="marca">
+        <div class="logo">AP</div>
+        <div>
+            <h1>Registrar Reporte</h1>
+            <p>Captura la información de la falla de alumbrado público</p>
+        </div>
+    </div>
+</header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="reportar.html">Reportar</a>
-        <a href="consultas.html">Consultas</a>
-        <a href="mapa.html">Mapa</a>
-        <a href="estadisticas.html">Estadísticas</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+<nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="reportar.html">Registrar reporte</a>
+    <a href="consultas.html">Consultar folio</a>
+    <a href="admin.html">Panel administrativo</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
 
-    <main class="contenedor">
+<main class="contenedor">
 
+    <section class="caja">
         <h2>Formulario de reporte</h2>
-
         <p>
-            En esta sección el ciudadano puede registrar una falla relacionada con el
-            alumbrado público. Es importante llenar todos los datos para ubicar mejor
-            el problema y darle seguimiento.
+            Llena todos los campos solicitados. Al enviar el reporte, el sistema podrá generar
+            un folio para dar seguimiento al caso.
         </p>
 
         <form id="formReporte">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required>
 
-            <label for="nombre">Nombre del ciudadano:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" required>
 
-            <label for="telefono">Teléfono de contacto:</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 2281234567" required>
+            <label for="colonia">Colonia</label>
+            <input type="text" id="colonia" required>
 
-            <label for="colonia">Colonia:</label>
-            <input type="text" id="colonia" name="colonia" placeholder="Ejemplo: Centro" required>
+            <label for="calle">Calle o referencia</label>
+            <input type="text" id="calle" required>
 
-            <label for="calle">Calle o referencia:</label>
-            <input type="text" id="calle" name="calle" placeholder="Ejemplo: Calle Hidalgo, frente a la tienda" required>
-
-            <label for="tipo">Tipo de falla:</label>
-            <select id="tipo" name="tipo" required>
+            <label for="tipo">Tipo de falla</label>
+            <select id="tipo" required>
                 <option value="">Selecciona una opción</option>
                 <option value="Luminaria apagada">Luminaria apagada</option>
                 <option value="Poste dañado">Poste dañado</option>
@@ -56,29 +59,21 @@
                 <option value="Zona sin iluminación">Zona sin iluminación</option>
             </select>
 
-            <label for="descripcion">Descripción del problema:</label>
-            <textarea id="descripcion" name="descripcion" rows="5" placeholder="Describe brevemente la falla" required></textarea>
+            <label for="descripcion">Descripción del problema</label>
+            <textarea id="descripcion" rows="5" required></textarea>
 
             <button type="submit">Enviar reporte</button>
-
         </form>
 
-        <p id="mensaje"></p>
+        <div id="mensaje"></div>
+    </section>
 
-        <section>
-            <h2>Indicaciones</h2>
-            <p>
-                Después de enviar el reporte, el sistema mostrará un mensaje de confirmación.
-                El reporte podrá ser revisado posteriormente por el área encargada.
-            </p>
-        </section>
+</main>
 
-    </main>
+<footer>
+    <p>Proyecto final - ordinario-ftw</p>
+</footer>
 
-    <footer>
-        <p>Proyecto final - ordinario-ftw</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
