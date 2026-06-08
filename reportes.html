@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Registrados</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="reportes">
+
+<header class="encabezado">
+    <div class="marca">
+        <div class="logo">AP</div>
+        <div>
+            <h1>Reportes Registrados</h1>
+            <p>Tabla con reportes y filtros dinámicos.</p>
+        </div>
+    </div>
+</header>
+
+<nav class="menu" aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="reportar.html">Registrar reporte</a>
+    <a href="consultas.html">Consultar folio</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="brigadas.html">Brigadas</a>
+    <a href="admin.html">Administración</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="documentacion.html">Documentación</a>
+</nav>
+
+<main class="contenedor">
+
+    <section class="caja">
+        <h2>Consulta general de reportes</h2>
+        <p>
+            Los datos se obtienen desde XML y de los reportes registrados durante la navegación.
+            Usa los filtros para buscar información específica.
+        </p>
+
+        <form class="filtros" id="formFiltrosReportes">
+            <label for="filtroEstado">Filtrar por estado</label>
+            <select id="filtroEstado">
+                <option value="">Todos</option>
+            </select>
+
+            <label for="filtroTipo">Filtrar por tipo de falla</label>
+            <select id="filtroTipo">
+                <option value="">Todos</option>
+            </select>
+
+            <label for="filtroZona">Filtrar por zona</label>
+            <select id="filtroZona">
+                <option value="">Todas</option>
+            </select>
+
+            <button type="button" id="limpiarFiltrosReportes">Limpiar filtros</button>
+        </form>
+
+        <div class="tabla-contenedor">
+            <table class="tabla">
+                <caption>Reportes de alumbrado público</caption>
+                <thead>
+                    <tr>
+                        <th>Folio</th>
+                        <th>Ciudadano</th>
+                        <th>Zona</th>
+                        <th>Colonia</th>
+                        <th>Falla</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaReportes"></tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Proyecto final - ordinario-ftw</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

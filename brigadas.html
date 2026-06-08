@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigadas de Atención</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="brigadas">
+
+<header class="encabezado">
+    <div class="marca">
+        <div class="logo">AP</div>
+        <div>
+            <h1>Brigadas de Atención</h1>
+            <p>Personal encargado del seguimiento a fallas reportadas.</p>
+        </div>
+    </div>
+</header>
+
+<nav class="menu" aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="reportar.html">Registrar reporte</a>
+    <a href="consultas.html">Consultar folio</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="brigadas.html">Brigadas</a>
+    <a href="admin.html">Administración</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="documentacion.html">Documentación</a>
+</nav>
+
+<main class="contenedor">
+
+    <section class="caja">
+        <h2>Listado de brigadas</h2>
+        <p>
+            Esta tabla se carga desde un archivo XML. Puedes filtrar la información por zona
+            o turno de atención.
+        </p>
+
+        <form class="filtros" id="formFiltrosBrigadas">
+            <label for="filtroZonaBrigada">Zona</label>
+            <select id="filtroZonaBrigada">
+                <option value="">Todas</option>
+            </select>
+
+            <label for="filtroTurnoBrigada">Turno</label>
+            <select id="filtroTurnoBrigada">
+                <option value="">Todos</option>
+                <option value="Matutino">Matutino</option>
+                <option value="Vespertino">Vespertino</option>
+            </select>
+
+            <button type="button" id="limpiarFiltrosBrigadas">Limpiar filtros</button>
+        </form>
+
+        <div class="tabla-contenedor">
+            <table class="tabla">
+                <caption>Brigadas de mantenimiento</caption>
+                <thead>
+                    <tr>
+                        <th>Brigada</th>
+                        <th>Zona</th>
+                        <th>Turno</th>
+                        <th>Especialidad</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaBrigadas"></tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Proyecto final - ordinario-ftw</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
