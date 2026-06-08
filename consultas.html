@@ -6,40 +6,40 @@
     <title>Consultar Folio</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body data-page="consultas">
 
 <header class="encabezado">
     <div class="marca">
         <div class="logo">AP</div>
         <div>
             <h1>Consultar Folio</h1>
-            <p>Consulta el estado de un reporte registrado</p>
+            <p>Revisa el estado de un reporte registrado.</p>
         </div>
     </div>
 </header>
 
-<nav class="menu">
+<nav class="menu" aria-label="Navegación principal">
     <a href="index.html">Inicio</a>
     <a href="reportar.html">Registrar reporte</a>
     <a href="consultas.html">Consultar folio</a>
-    <a href="admin.html">Panel administrativo</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="brigadas.html">Brigadas</a>
+    <a href="admin.html">Administración</a>
     <a href="estadisticas.html">Estadísticas</a>
     <a href="contacto.html">Contacto</a>
+    <a href="documentacion.html">Documentación</a>
 </nav>
 
 <main class="contenedor">
 
     <section class="caja">
         <h2>Búsqueda de reporte</h2>
-        <p>
-            Ingresa el folio generado al registrar el reporte para consultar su estado.
-        </p>
+        <p>Ingresa el folio generado al registrar el reporte.</p>
 
         <form id="formConsulta">
             <label for="folioBuscar">Folio del reporte</label>
-            <input type="text" id="folioBuscar" required>
-
-            <button type="submit">Consultar</button>
+            <input type="text" id="folioBuscar" name="folioBuscar" required>
+            <button type="submit">Consultar reporte</button>
         </form>
 
         <div id="resultadoConsulta"></div>

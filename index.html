@@ -3,82 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Alumbrado Público</title>
+    <title>Sistema de Alumbrado Público | Inicio</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body data-page="inicio">
 
 <header class="encabezado">
     <div class="marca">
-        <div class="logo">AP</div>
+        <div class="logo" aria-label="Logotipo del sistema">AP</div>
         <div>
             <h1>Sistema de Reporte de Alumbrado Público</h1>
-            <p>Plataforma ciudadana para reportar fallas en luminarias públicas</p>
+            <p>Plataforma ciudadana para registrar y consultar fallas en luminarias públicas.</p>
         </div>
     </div>
 </header>
 
-<nav class="menu">
+<nav class="menu" aria-label="Navegación principal">
     <a href="index.html">Inicio</a>
     <a href="reportar.html">Registrar reporte</a>
     <a href="consultas.html">Consultar folio</a>
-    <a href="admin.html">Panel administrativo</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="brigadas.html">Brigadas</a>
+    <a href="admin.html">Administración</a>
     <a href="estadisticas.html">Estadísticas</a>
     <a href="contacto.html">Contacto</a>
+    <a href="documentacion.html">Documentación</a>
 </nav>
 
 <main class="contenedor">
 
-    <section class="hero">
-        <div>
+    <section class="hero" aria-labelledby="titulo-hero">
+        <article>
             <span class="etiqueta">Servicio ciudadano</span>
-            <h2>Reporta fallas de alumbrado público de forma rápida y organizada</h2>
+            <h2 id="titulo-hero">Reporta fallas de alumbrado público de forma rápida y organizada</h2>
             <p>
-                Este sistema permite registrar reportes de luminarias apagadas, postes dañados,
-                cables expuestos o zonas sin iluminación. Cada reporte podrá ser consultado
-                mediante un folio de seguimiento.
+                Este sitio permite registrar reportes de luminarias apagadas, postes dañados,
+                cables expuestos o zonas sin iluminación. Cada solicitud genera un folio para
+                consultar su estado.
             </p>
-            <a href="reportar.html" class="boton">Registrar reporte</a>
-        </div>
 
-        <div class="panel-info">
-            <h3>Funciones principales</h3>
-            <p>Registro de reportes ciudadanos</p>
-            <p>Consulta de estado por folio</p>
-            <p>Panel administrativo</p>
-            <p>Estadísticas del servicio</p>
-        </div>
+            <div class="acciones">
+                <a class="boton" href="reportar.html">Registrar reporte</a>
+                <a class="boton secundario" href="consultas.html">Consultar folio</a>
+            </div>
+        </article>
+
+        <aside class="panel-info" aria-label="Funciones principales del sistema">
+            <h3>Funciones del sistema</h3>
+            <p>Registro ciudadano de fallas.</p>
+            <p>Consulta por folio.</p>
+            <p>Tablas cargadas desde XML.</p>
+            <p>Filtros dinámicos con JavaScript.</p>
+        </aside>
     </section>
 
-    <section class="tarjetas">
+    <section class="tarjetas" aria-labelledby="titulo-servicios">
+        <h2 id="titulo-servicios" class="solo-lectura">Servicios disponibles</h2>
+
         <article class="tarjeta">
             <h3>Registro ciudadano</h3>
-            <p>
-                El ciudadano puede registrar una falla indicando ubicación, tipo de problema
-                y descripción.
-            </p>
+            <p>Permite capturar la información de una falla y generar un folio de seguimiento.</p>
         </article>
 
         <article class="tarjeta">
             <h3>Seguimiento</h3>
-            <p>
-                El sistema genera un folio que permite consultar posteriormente el estado del reporte.
-            </p>
+            <p>El ciudadano puede consultar el estado de su reporte mediante el folio generado.</p>
         </article>
 
         <article class="tarjeta">
-            <h3>Administración</h3>
-            <p>
-                El personal autorizado podrá revisar los reportes y actualizar su estado de atención.
-            </p>
+            <h3>Control administrativo</h3>
+            <p>El personal autorizado puede iniciar sesión y revisar los reportes registrados.</p>
         </article>
+    </section>
+
+    <section class="caja">
+        <h2>Catálogos cargados desde XML</h2>
+        <p>
+            La siguiente información se obtiene desde archivos XML del proyecto para demostrar
+            recuperación de datos con JavaScript.
+        </p>
+
+        <div id="resumenXML" class="tarjetas pequeñas"></div>
     </section>
 
 </main>
 
 <footer>
-    <p>Proyecto final - ordinario-ftw</p>
+    <p>Proyecto final - Fundamentos de Tecnologías Web - ordinario-ftw</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
