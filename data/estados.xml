@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estados>
+    <estado id="1">Pendiente</estado>
+    <estado id="2">En proceso</estado>
+    <estado id="3">Atendido</estado>
+</estados>

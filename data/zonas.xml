@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zonas>
+    <zona id="1">
+        <nombre>Zona Centro</nombre>
+        <responsable>Servicios Públicos</responsable>
+    </zona>
+
+    <zona id="2">
+        <nombre>Zona Norte</nombre>
+        <responsable>Servicios Públicos</responsable>
+    </zona>
+
+    <zona id="3">
+        <nombre>Zona Sur</nombre>
+        <responsable>Servicios Públicos</responsable>
+    </zona>
+
+    <zona id="4">
+        <nombre>Zona Este</nombre>
+        <responsable>Mantenimiento Urbano</responsable>
+    </zona>
+
+    <zona id="5">
+        <nombre>Zona Oeste</nombre>
+        <responsable>Mantenimiento Urbano</responsable>
+    </zona>
+</zonas>

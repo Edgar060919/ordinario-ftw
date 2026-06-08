@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dtoProyecto>
+    <entidad nombre="Usuario">
+        <campo nombre="username" tipo="texto" requerido="si"/>
+        <campo nombre="password" tipo="texto" requerido="si"/>
+        <campo nombre="rol" tipo="texto" requerido="si"/>
+        <campo nombre="activo" tipo="booleano" requerido="si"/>
+    </entidad>
+
+    <entidad nombre="Reporte">
+        <campo nombre="folio" tipo="texto" requerido="si"/>
+        <campo nombre="nombre" tipo="texto" requerido="si"/>
+        <campo nombre="telefono" tipo="texto" requerido="si"/>
+        <campo nombre="zona" tipo="texto" requerido="si"/>
+        <campo nombre="colonia" tipo="texto" requerido="si"/>
+        <campo nombre="calle" tipo="texto" requerido="si"/>
+        <campo nombre="tipo" tipo="texto" requerido="si"/>
+        <campo nombre="prioridad" tipo="texto" requerido="si"/>
+        <campo nombre="descripcion" tipo="texto" requerido="si"/>
+        <campo nombre="estado" tipo="texto" requerido="si"/>
+        <campo nombre="fecha" tipo="texto" requerido="si"/>
+    </entidad>
+
+    <entidad nombre="Brigada">
+        <campo nombre="nombre" tipo="texto" requerido="si"/>
+        <campo nombre="zona" tipo="texto" requerido="si"/>
+        <campo nombre="turno" tipo="texto" requerido="si"/>
+        <campo nombre="especialidad" tipo="texto" requerido="si"/>
+    </entidad>
+</dtoProyecto>

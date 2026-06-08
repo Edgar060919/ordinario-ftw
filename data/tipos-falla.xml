@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiposFalla>
+    <tipo id="1">
+        <nombre>Luminaria apagada</nombre>
+        <prioridad>Media</prioridad>
+    </tipo>
+
+    <tipo id="2">
+        <nombre>Poste dañado</nombre>
+        <prioridad>Alta</prioridad>
+    </tipo>
+
+    <tipo id="3">
+        <nombre>Luz intermitente</nombre>
+        <prioridad>Baja</prioridad>
+    </tipo>
+
+    <tipo id="4">
+        <nombre>Cable expuesto</nombre>
+        <prioridad>Alta</prioridad>
+    </tipo>
+
+    <tipo id="5">
+        <nombre>Zona sin iluminación</nombre>
+        <prioridad>Alta</prioridad>
+    </tipo>
+</tiposFalla>

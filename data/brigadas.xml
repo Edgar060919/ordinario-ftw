@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<brigadas>
+    <brigada id="1">
+        <nombre>Brigada Centro</nombre>
+        <zona>Zona Centro</zona>
+        <turno>Matutino</turno>
+        <especialidad>Reparación de luminarias</especialidad>
+    </brigada>
+
+    <brigada id="2">
+        <nombre>Brigada Norte</nombre>
+        <zona>Zona Norte</zona>
+        <turno>Vespertino</turno>
+        <especialidad>Revisión eléctrica</especialidad>
+    </brigada>
+
+    <brigada id="3">
+        <nombre>Brigada Sur</nombre>
+        <zona>Zona Sur</zona>
+        <turno>Matutino</turno>
+        <especialidad>Mantenimiento de postes</especialidad>
+    </brigada>
+
+    <brigada id="4">
+        <nombre>Brigada Este</nombre>
+        <zona>Zona Este</zona>
+        <turno>Vespertino</turno>
+        <especialidad>Cableado y seguridad</especialidad>
+    </brigada>
+
+    <brigada id="5">
+        <nombre>Brigada Oeste</nombre>
+        <zona>Zona Oeste</zona>
+        <turno>Matutino</turno>
+        <especialidad>Atención preventiva</especialidad>
+    </brigada>
+</brigadas>
