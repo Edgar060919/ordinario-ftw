@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-page="admin">
+
+<header class="encabezado">
+    <div class="marca">
+        <div class="logo">AP</div>
+        <div>
+            <h1>Panel Administrativo</h1>
+            <p>Acceso para personal autorizado.</p>
+        </div>
+    </div>
+</header>
+
+<nav class="menu" aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="reportar.html">Registrar reporte</a>
+    <a href="consultas.html">Consultar folio</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="brigadas.html">Brigadas</a>
+    <a href="admin.html">Administración</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="documentacion.html">Documentación</a>
+</nav>
+
+<main class="contenedor">
+
+    <section id="loginAdmin" class="caja login">
+        <h2>Inicio de sesión</h2>
+        <p>El usuario y la contraseña se validan contra el archivo XML de usuarios.</p>
+
+        <form id="formLogin">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <div id="mensajeLogin"></div>
+    </section>
+
+    <section id="panelAdmin" class="caja oculto">
+        <div class="encabezado-panel">
+            <div>
+                <h2>Reportes para seguimiento</h2>
+                <p>El administrador puede cambiar el estado de los reportes registrados.</p>
+            </div>
+
+            <button type="button" onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+
+        <div class="tabla-contenedor">
+            <table class="tabla">
+                <caption>Administración de reportes</caption>
+                <thead>
+                    <tr>
+                        <th>Folio</th>
+                        <th>Ciudadano</th>
+                        <th>Zona</th>
+                        <th>Falla</th>
+                        <th>Estado</th>
+                        <th>Actualizar</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaAdmin"></tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Proyecto final - ordinario-ftw</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
